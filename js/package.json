@@ -35,6 +35,7 @@
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "leaflet-draw": "^1.0.4",
     "leaflet-fullscreen": "^1.0.2",
+    "leaflet-geojson-vt": "^1.1.0",
     "leaflet-measure": "^3.1.0",
     "leaflet-rotatedmarker": "^0.2.0",
     "leaflet-search": "2.9.8",

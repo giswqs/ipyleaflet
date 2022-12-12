@@ -989,6 +989,25 @@ class VectorLayer(Layer):
     _model_name = Unicode('LeafletVectorLayerModel').tag(sync=True)
 
 
+class GeoJSONVT(Layer):
+    """GeoJSONVT abstract class."""
+
+    _view_name = Unicode('LeafletGeoJSONVTView').tag(sync=True)
+    _model_name = Unicode('LeafletGeoJSONVTModel').tag(sync=True)
+
+    data=Dict().tag(sync=True)
+
+    #Options
+    max_zoom=Int(18).tag(sync=True, o=True)
+    tolerance=Float(3).tag(sync=True, o=True)
+    extent=Int(4096).tag(sync=True, o=True)
+    buffer=Int(64).tag(sync=True, o=True)   
+    debug=Int(0).tag(sync=True, o=True)
+    index_max_zoom=Int(5).tag(sync=True, o=True)
+    index_max_points=Int(10000).tag(sync=True, o=True)
+    solid_children=Bool(False).tag(sync=True, o=True)
+    style=Dict().tag(sync=True, o=True)
+
 class Path(VectorLayer):
     """Path abstract class.
 

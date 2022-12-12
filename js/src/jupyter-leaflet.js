@@ -30,6 +30,7 @@ export * from './layers/MarkerCluster.js';
 export * from './layers/LayerGroup.js';
 export * from './layers/FeatureGroup.js';
 export * from './layers/GeoJSON.js';
+export * from './layers/GeoJSONVT.js';
 export * from './layers/DivIcon.js';
 
 //Controls
